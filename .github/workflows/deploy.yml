@@ -3,7 +3,7 @@ name: Deploy Easy Track to GitHub Pages
 on:
   push:
     branches:
-      - easy-track
+      - easy-track-with-modules
 
 jobs:
   deploy:
@@ -24,9 +24,9 @@ jobs:
       - name: Build
         run: npm run build --prod
 
-      - name: Deploy to gh-pages (easy-track)
+      - name: Deploy to gh-pages (easy-track-with-modules)
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/browser
-          destination_dir: easy-track
+          destination_dir: easy-track-with-modules
