@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { UserComponent } from './user/user.component';
 import { TasksComponent } from './tasks/tasks.component';
+import { TasksService } from './tasks/tasks.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +18,6 @@ import { TasksComponent } from './tasks/tasks.component';
     NgFor,
     NgIf,
   ],
-  providers: [],
+  providers: [TasksService],
 })
 export class AppModule {}

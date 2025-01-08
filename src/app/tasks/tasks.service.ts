@@ -4,7 +4,7 @@ import { NewTask, Task } from './task/task.model';
 
 const LOCAL_STORAGE_KEY = 'tasks';
 
-@Injectable({ providedIn: 'root' })
+@Injectable()
 export class TasksService {
   private tasks: Task[] = [];
 
