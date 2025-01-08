@@ -1,6 +1,8 @@
-@if(isAddingTask){
-<app-new-task (close)="onCloseAddTask()" [userId]="user.id" />
-}
+<app-new-task
+  *ngIf="isAddingTask"
+  (close)="onCloseAddTask()"
+  [userId]="user.id"
+/>
 
 <section id="tasks">
   <header>
@@ -10,10 +12,8 @@
     </menu>
   </header>
   <ul>
-    @for(task of selectedUserTasks; track task.id) {
-    <li>
+    <li *ngFor="let task of selectedUserTasks">
       <app-task [task]="task" />
     </li>
-    }
   </ul>
 </section>
