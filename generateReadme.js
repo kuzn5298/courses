@@ -13,10 +13,8 @@ const generateReadme = () => {
 
     for (const project of course.projects) {
       readmeContent += `> **Name:** ${project.name}<br>\n`;
-      readmeContent += `> **Branches:** ${project.branches
-        ?.map((branch) => `[${branch.name}](${branch.url})`)
-        ?.join(' | ')}<br>\n`;
-      readmeContent += `> **Live Preview:** [${project.name}](${project.url})<br>\n\n`;
+      readmeContent += `> **Branch:** [${project.branch.name}](${project.branch.url})<br>\n`;
+      readmeContent += `> **Live Preview:** [View Project](${project.url})<br>\n\n`;
     }
   }
 
