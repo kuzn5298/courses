@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Angular - The Complete Guide",
+    "url": "https://www.udemy.com/course/the-complete-guide-to-angular-2/",
+    "projects": [
+      {
+        "name": "Easy Track",
+        "url": "https://courses.kuzn.dev/easy-track/",
+        "branches": [
+          {
+            "name": "easy-track",
+            "url": "https://github.com/kuzn5298/courses/tree/easy-track"
+          },
+          {
+            "name": "easy-track-with-modules",
+            "url": "https://github.com/kuzn5298/courses/tree/easy-track-with-modules"
+          }
+        ]
+      },
+      {
+        "name": "Investment Calculator",
+        "url": "https://courses.kuzn.dev/investment-calculator/",
+        "branches": [
+          {
+            "name": "investment-calculator",
+            "url": "https://github.com/kuzn5298/courses/tree/investment-calculator"
+          }
+        ]
+      }
+    ]
+  }
+]
