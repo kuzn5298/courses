@@ -1,12 +1,13 @@
-import { Component, inject, OnInit, output } from '@angular/core';
+import { InvestmentService } from './../investment.service';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { UserInput } from './user-input.model';
 
 const INITIAL_FORM_VALUE: UserInput = {
   initialInvestment: 0,
   annualInvestment: 0,
-  expectedReturn: 0,
-  duration: 0,
+  expectedReturn: 5,
+  duration: 10,
 };
 
 @Component({
@@ -15,17 +16,13 @@ const INITIAL_FORM_VALUE: UserInput = {
   templateUrl: './user-input.component.html',
   styleUrl: './user-input.component.css',
 })
-export class UserInputComponent implements OnInit {
+export class UserInputComponent {
   private fb = inject(FormBuilder);
-  calculate = output<UserInput>();
+  private investmentService = inject(InvestmentService);
 
-  form!: FormGroup;
-
-  ngOnInit(): void {
-    this.form = this.fb.group(INITIAL_FORM_VALUE);
-  }
+  form = signal<FormGroup>(this.fb.group(INITIAL_FORM_VALUE));
 
   onSubmit() {
-    this.calculate.emit(this.form.value);
+    this.investmentService.calculate(this.form().value);
   }
 }
