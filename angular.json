@@ -26,7 +26,7 @@
             ],
             "styles": ["src/styles.css"],
             "scripts": [],
-            "baseHref": "/investment-calculator"
+            "baseHref": "/investment-calculator/"
           },
           "configurations": {
             "production": {
