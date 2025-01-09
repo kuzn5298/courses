@@ -14,8 +14,7 @@ async function loadProjects() {
       card.className = 'card';
 
       const image = document.createElement('img');
-      const mainBranch = project.branches?.[0];
-      console.log(mainBranch);
+      const mainBranch = project.branches[0];
       const src = `https://raw.githubusercontent.com/kuzn5298/courses/refs/heads/${mainBranch.name}/preview.png`;
       image.src = src;
       image.alt = project.name;
