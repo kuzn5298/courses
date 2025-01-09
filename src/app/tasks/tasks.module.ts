@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
-import { NgFor, NgIf } from '@angular/common';
-import { TaskModule } from './task/task.module';
-import { NewTaskModule } from './new-task/new-task.module';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { TasksComponent } from './tasks.component';
 import { TasksService } from './tasks.service';
+import { TaskComponent } from './task/task.component';
+import { NewTaskComponent } from './new-task/new-task.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-  declarations: [TasksComponent],
-  imports: [TaskModule, NewTaskModule, NgIf, NgFor],
+  declarations: [TasksComponent, TaskComponent, NewTaskComponent],
+  imports: [CommonModule, SharedModule, FormsModule],
   exports: [TasksComponent],
   providers: [TasksService],
 })
