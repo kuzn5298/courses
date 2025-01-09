@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, output } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { UserInput } from './user-input.model';
 
@@ -17,6 +17,7 @@ const INITIAL_FORM_VALUE: UserInput = {
 })
 export class UserInputComponent implements OnInit {
   private fb = inject(FormBuilder);
+  calculate = output<UserInput>();
 
   form!: FormGroup;
 
@@ -25,6 +26,6 @@ export class UserInputComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log('Form submitted!', this.form.value);
+    this.calculate.emit(this.form.value);
   }
 }

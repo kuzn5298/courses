@@ -1,2 +1,6 @@
 <app-header />
-<app-user-input />
+<app-user-input (calculate)="onUserInput($event)" />
+
+@if(userInput) {
+<app-result [userInput]="userInput" />
+}
