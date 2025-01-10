@@ -24,6 +24,17 @@
           "url": "https://github.com/kuzn5298/courses/tree/investment-calculator"
         },
         "tags": ["Angular", "TypeScript", "CSS"]
+      },
+      {
+        "name": "Cmp Deep Dive (in progress)",
+        "url": "https://courses.kuzn.dev/cmp-deep-dive/",
+        "description": "",
+        "preview": "https://raw.githubusercontent.com/kuzn5298/courses/refs/heads/cmp-deep-dive/preview.png",
+        "branch": {
+          "name": "cmp-deep-dive",
+          "url": "https://github.com/kuzn5298/courses/tree/cmp-deep-dive"
+        },
+        "tags": ["Angular", "TypeScript", "CSS"]
       }
     ]
   }
