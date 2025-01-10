@@ -12,3 +12,7 @@ This repository showcases projects completed during various courses. Each projec
 > **Name:** Investment Calculator<br>
 > **Branch:** [investment-calculator](https://github.com/kuzn5298/courses/tree/investment-calculator)<br>
 > **Live Preview:** [View Project](https://courses.kuzn.dev/investment-calculator/)<br>
+
+> **Name:** Cmp Deep Dive (in progress)<br>
+> **Branch:** [cmp-deep-dive](https://github.com/kuzn5298/courses/tree/cmp-deep-dive)<br>
+> **Live Preview:** [View Project](https://courses.kuzn.dev/cmp-deep-dive/)<br>
