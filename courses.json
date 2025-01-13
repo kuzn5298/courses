@@ -51,6 +51,24 @@
           "Component Lifecycle and etc."
         ],
         "tags": ["Angular", "TypeScript", "CSS"]
+      },
+      {
+        "name": "Directives Deep Dive",
+        "url": "https://courses.kuzn.dev/directives-deep-dive/",
+        "description": "A simple application for a deeper dive into Angular directives.",
+        "preview": "https://raw.githubusercontent.com/kuzn5298/courses/refs/heads/directives-deep-dive/preview.png",
+        "branch": {
+          "name": "directives-deep-dive",
+          "url": "https://github.com/kuzn5298/courses/tree/directives-deep-dive"
+        },
+        "skills": [
+          "Directives vs Components",
+          "Attribute Directives",
+          "Structure Directives",
+          "Built-in Directives",
+          "Custom Directives and etc."
+        ],
+        "tags": ["Angular", "TypeScript", "CSS"]
       }
     ]
   }
