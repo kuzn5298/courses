@@ -1,15 +1,18 @@
 const getExternalLinkSvg = async () =>
   (await fetch('icons/external-link.svg')).text();
-
+const getBookSvg = async () => (await fetch('icons/book.svg')).text();
 const getGitHubSvg = async () => (await fetch('icons/github.svg')).text();
 const getRightIconSvg = async () =>
   (await fetch('icons/right-arrow.svg')).text();
 
-const createIconButton = (icon, url) => {
-  const button = document.createElement('a');
+const goToUrl = (url) => {
+  window.open(url, '_blank');
+};
+
+const createIconButton = (icon, action) => {
+  const button = document.createElement('button');
   button.className = 'icon';
-  button.href = url;
-  button.target = '_blank';
+  button.onclick = action;
   button.innerHTML = icon;
   button.addEventListener('click', (event) => event.stopPropagation());
 
@@ -31,16 +34,23 @@ const createImageBlock = async (project) => {
 
   const description = document.createElement('p');
   description.textContent = project.description;
+
+  if (project.skills?.length) {
+    const skills = await createSkillsBlock(project);
+    description.appendChild(skills);
+  }
+
   overlay.appendChild(description);
 
   const actions = document.createElement('div');
   actions.className = 'actions';
   overlay.appendChild(actions);
 
-  const githubButton = createIconButton(await getGitHubSvg(), project.github);
-  const courseButton = createIconButton(
-    await getExternalLinkSvg(),
-    project.course.url
+  const githubButton = createIconButton(await getGitHubSvg(), () =>
+    goToUrl(project.github)
+  );
+  const courseButton = createIconButton(await getExternalLinkSvg(), () =>
+    goToUrl(project.course.url)
   );
   actions.appendChild(githubButton);
   actions.appendChild(courseButton);
@@ -82,6 +92,30 @@ const createTagsBlock = (project) => {
   });
 
   return tagsBlock;
+};
+
+const createSkillsBlock = async (project) => {
+  const skillsBlock = document.createElement('div');
+  skillsBlock.className = 'skills';
+  const skillButton = createIconButton(await getBookSvg());
+  skillsBlock.appendChild(skillButton);
+
+  const skillsContent = document.createElement('div');
+  skillsContent.className = 'skills-content';
+  const skillsList = document.createElement('ul');
+
+  project.skills.forEach((skill) => {
+    const skillElement = document.createElement('li');
+    const skillText = document.createElement('span');
+    skillText.textContent = skill;
+    skillElement.appendChild(skillText);
+    skillsList.appendChild(skillElement);
+  });
+
+  skillsContent.appendChild(skillsList);
+  skillsBlock.appendChild(skillsContent);
+
+  return skillsBlock;
 };
 
 export const createCard = async (project) => {

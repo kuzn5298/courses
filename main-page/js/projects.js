@@ -22,6 +22,7 @@ const parseCoursesToProjects = (courses) => {
           name: course.name,
           url: course.url,
         },
+        skills: project.skills,
       }))
     )
     .flat();

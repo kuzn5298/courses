@@ -5,8 +5,11 @@ const loadProject = async () => {
   const projectList = document.getElementById('project-list');
   const projects = await getProjects();
 
-  projects.forEach(async (project) => {
-    const card = await createCard(project);
+  const cards = await Promise.all(
+    projects.map((project) => createCard(project))
+  );
+
+  cards.forEach((card) => {
     projectList.appendChild(card);
   });
 };
