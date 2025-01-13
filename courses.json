@@ -12,10 +12,19 @@
           "name": "easy-track",
           "url": "https://github.com/kuzn5298/courses/tree/easy-track"
         },
+        "skills": [
+          "Angular Project Structure",
+          "Working with Components",
+          "Handling User Events",
+          "Rendering & Updating Content",
+          "Angular Modules (NgModule)",
+          "Declaring & Exporting Components",
+          "Shared Modules and etc."
+        ],
         "tags": ["Angular", "TypeScript", "CSS"]
       },
       {
-        "name": "Investment Calculator",
+        "name": "Investment Calculator (Practice)",
         "url": "https://courses.kuzn.dev/investment-calculator/",
         "description": "A simple application for calculating future investment profits.",
         "preview": "https://raw.githubusercontent.com/kuzn5298/courses/refs/heads/investment-calculator/preview.png",
@@ -26,14 +35,21 @@
         "tags": ["Angular", "TypeScript", "CSS"]
       },
       {
-        "name": "Cmp Deep Dive (in progress)",
+        "name": "Cmp Deep Dive",
         "url": "https://courses.kuzn.dev/cmp-deep-dive/",
-        "description": "",
+        "description": "A simple application for a deeper dive into Angular components.",
         "preview": "https://raw.githubusercontent.com/kuzn5298/courses/refs/heads/cmp-deep-dive/preview.png",
         "branch": {
           "name": "cmp-deep-dive",
           "url": "https://github.com/kuzn5298/courses/tree/cmp-deep-dive"
         },
+        "skills": [
+          "Advanced Components Features",
+          "Working with the Host Element",
+          "Inputs, Outputs & Two Way-Binding",
+          "Working with Component Views & Content",
+          "Component Lifecycle and etc."
+        ],
         "tags": ["Angular", "TypeScript", "CSS"]
       }
     ]

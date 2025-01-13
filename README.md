@@ -9,10 +9,10 @@ This repository showcases projects completed during various courses. Each projec
 > **Branch:** [easy-track](https://github.com/kuzn5298/courses/tree/easy-track)<br>
 > **Live Preview:** [View Project](https://courses.kuzn.dev/easy-track/)<br>
 
-> **Name:** Investment Calculator<br>
+> **Name:** Investment Calculator (Practice)<br>
 > **Branch:** [investment-calculator](https://github.com/kuzn5298/courses/tree/investment-calculator)<br>
 > **Live Preview:** [View Project](https://courses.kuzn.dev/investment-calculator/)<br>
 
-> **Name:** Cmp Deep Dive (in progress)<br>
+> **Name:** Cmp Deep Dive<br>
 > **Branch:** [cmp-deep-dive](https://github.com/kuzn5298/courses/tree/cmp-deep-dive)<br>
 > **Live Preview:** [View Project](https://courses.kuzn.dev/cmp-deep-dive/)<br>
