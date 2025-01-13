@@ -16,3 +16,7 @@ This repository showcases projects completed during various courses. Each projec
 > **Name:** Cmp Deep Dive<br>
 > **Branch:** [cmp-deep-dive](https://github.com/kuzn5298/courses/tree/cmp-deep-dive)<br>
 > **Live Preview:** [View Project](https://courses.kuzn.dev/cmp-deep-dive/)<br>
+
+> **Name:** Directives Deep Dive<br>
+> **Branch:** [directives-deep-dive](https://github.com/kuzn5298/courses/tree/directives-deep-dive)<br>
+> **Live Preview:** [View Project](https://courses.kuzn.dev/directives-deep-dive/)<br>
