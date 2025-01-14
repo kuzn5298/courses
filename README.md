@@ -20,3 +20,7 @@ This repository showcases projects completed during various courses. Each projec
 > **Name:** Directives Deep Dive<br>
 > **Branch:** [directives-deep-dive](https://github.com/kuzn5298/courses/tree/directives-deep-dive)<br>
 > **Live Preview:** [View Project](https://courses.kuzn.dev/directives-deep-dive/)<br>
+
+> **Name:** Pipes Deep Dive<br>
+> **Branch:** [pipes-deep-dive](https://github.com/kuzn5298/courses/tree/pipes-deep-dive)<br>
+> **Live Preview:** [View Project](https://courses.kuzn.dev/pipes-deep-dive/)<br>
