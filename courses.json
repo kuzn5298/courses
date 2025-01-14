@@ -69,6 +69,22 @@
           "Custom Directives and etc."
         ],
         "tags": ["Angular", "TypeScript", "CSS"]
+      },
+      {
+        "name": "Pipes Deep Dive",
+        "url": "https://courses.kuzn.dev/pipes-deep-dive/",
+        "description": "A simple application for a deeper dive into Angular pipes.",
+        "preview": "https://raw.githubusercontent.com/kuzn5298/courses/refs/heads/pipes-deep-dive/preview.png",
+        "branch": {
+          "name": "pipes-deep-dive",
+          "url": "https://github.com/kuzn5298/courses/tree/pipes-deep-dive"
+        },
+        "skills": [
+          "Built-in Pipes",
+          "Pure & Impure Pipes",
+          "Custom Pipes and etc."
+        ],
+        "tags": ["Angular", "TypeScript", "CSS"]
       }
     ]
   }
