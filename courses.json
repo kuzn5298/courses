@@ -85,6 +85,24 @@
           "Custom Pipes and etc."
         ],
         "tags": ["Angular", "TypeScript", "CSS"]
+      },
+      {
+        "name": "Services Deep Dive",
+        "url": "https://courses.kuzn.dev/services-deep-dive/",
+        "description": "A simple application for a deeper dive into Angular services.",
+        "preview": "https://raw.githubusercontent.com/kuzn5298/courses/refs/heads/services-deep-dive/preview.png",
+        "branch": {
+          "name": "services-deep-dive",
+          "url": "https://github.com/kuzn5298/courses/tree/services-deep-dive"
+        },
+        "skills": [
+          "Revising Services",
+          "Revising DI",
+          "Hierarchical Injector",
+          "DI Resolution Process",
+          "Injection Tokens and etc."
+        ],
+        "tags": ["Angular", "TypeScript", "CSS"]
       }
     ]
   }
