@@ -24,3 +24,7 @@ This repository showcases projects completed during various courses. Each projec
 > **Name:** Pipes Deep Dive<br>
 > **Branch:** [pipes-deep-dive](https://github.com/kuzn5298/courses/tree/pipes-deep-dive)<br>
 > **Live Preview:** [View Project](https://courses.kuzn.dev/pipes-deep-dive/)<br>
+
+> **Name:** Services Deep Dive<br>
+> **Branch:** [services-deep-dive](https://github.com/kuzn5298/courses/tree/services-deep-dive)<br>
+> **Live Preview:** [View Project](https://courses.kuzn.dev/services-deep-dive/)<br>
