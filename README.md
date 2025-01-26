@@ -28,3 +28,7 @@ This repository showcases projects completed during various courses. Each projec
 > **Name:** Services Deep Dive<br>
 > **Branch:** [services-deep-dive](https://github.com/kuzn5298/courses/tree/services-deep-dive)<br>
 > **Live Preview:** [View Project](https://courses.kuzn.dev/services-deep-dive/)<br>
+
+> **Name:** Change Detection Deep Dive<br>
+> **Branch:** [change-detection-deep-dive](https://github.com/kuzn5298/courses/tree/change-detection-deep-dive)<br>
+> **Live Preview:** [View Project](https://courses.kuzn.dev/change-detection-deep-dive/)<br>
