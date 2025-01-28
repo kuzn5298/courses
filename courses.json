@@ -120,6 +120,22 @@
           "Going Zoneless and etc."
         ],
         "tags": ["Angular", "TypeScript", "CSS"]
+      },
+      {
+        "name": "RxJS Deep Dive",
+        "url": "https://courses.kuzn.dev/rxjs-deep-dive/",
+        "description": "A simple application for a deeper dive into RxJS.",
+        "preview": "https://raw.githubusercontent.com/kuzn5298/courses/refs/heads/rxjs-deep-dive/preview.png",
+        "branch": {
+          "name": "rxjs-deep-dive",
+          "url": "https://github.com/kuzn5298/courses/tree/rxjs-deep-dive"
+        },
+        "skills": [
+          "Creating & Using Observables",
+          "Observable Operators",
+          "Observables vs Signals and etc."
+        ],
+        "tags": ["Angular", "TypeScript", "RxJS"]
       }
     ]
   }
