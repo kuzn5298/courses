@@ -10,13 +10,8 @@ app.use(bodyParser.json());
 
 // CORS
 
-const allowedOrigins = ["https://courses.kuzn.dev"];
-
 app.use((req, res, next) => {
-  const origin = req.headers.origin;
-  if (allowedOrigins.includes(origin)) {
-    res.setHeader("Access-Control-Allow-Origin", origin);
-  }
+  res.setHeader("Access-Control-Allow-Origin", "https://courses.kuzn.dev");
   res.setHeader("Access-Control-Allow-Methods", "GET, PUT, DELETE");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
