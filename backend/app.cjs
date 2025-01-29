@@ -1,7 +1,7 @@
-import fs from "node:fs/promises";
+const fs = require("fs").promises;
 
-import bodyParser from "body-parser";
-import express from "express";
+const bodyParser = require("body-parser");
+const express = require("express");
 
 const app = express();
 
@@ -10,8 +10,13 @@ app.use(bodyParser.json());
 
 // CORS
 
+const allowedOrigins = ["https://courses.kuzn.dev"];
+
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  }
   res.setHeader("Access-Control-Allow-Methods", "GET, PUT, DELETE");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
@@ -19,8 +24,6 @@ app.use((req, res, next) => {
 });
 
 app.get("/places", async (req, res) => {
-  await new Promise((resolve) => setTimeout(resolve, 3000));
-
   const fileContent = await fs.readFile("./data/places.json");
 
   const placesData = JSON.parse(fileContent);
