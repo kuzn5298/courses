@@ -136,6 +136,23 @@
           "Observables vs Signals and etc."
         ],
         "tags": ["Angular", "TypeScript", "RxJS"]
+      },
+      {
+        "name": "Place Picker",
+        "url": "https://courses.kuzn.dev/place-picker/",
+        "description": "A simple application for selecting and managing favorite places.",
+        "preview": "https://raw.githubusercontent.com/kuzn5298/courses/refs/heads/place-picker/preview.png",
+        "branch": {
+          "name": "place-picker",
+          "url": "https://github.com/kuzn5298/courses/tree/place-picker"
+        },
+        "skills": [
+          "Connecting to a backend",
+          "Fetching Data",
+          "Sending Data",
+          "Handling \"Loading\" & \"Error\" and etc."
+        ],
+        "tags": ["Angular", "TypeScript", "RxJS"]
       }
     ]
   }
