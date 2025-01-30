@@ -154,7 +154,7 @@
         ],
         "tags": ["Angular", "TypeScript", "RxJS"]
       },
-        {
+      {
         "name": "Forms Deep Dive",
         "url": "https://courses.kuzn.dev/forms-deep-dive/",
         "description": "A simple application for a deeper dive into forms.",
@@ -166,10 +166,10 @@
         "skills": [
           "Template-driven Forms",
           "Reactive Forms",
-          "Manaaging Inputs & Validation and etc."
+          "Managing Inputs & Validation and etc."
         ],
         "tags": ["Angular", "TypeScript", "CSS"]
-      },
+      }
     ]
   }
 ]
