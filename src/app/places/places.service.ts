@@ -1,6 +1,6 @@
 import { inject, Injectable, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { catchError, map, throwError } from 'rxjs';
+import { catchError, map, tap, throwError } from 'rxjs';
 
 import { Place } from './place.model';
 import { environment } from '../../environments/environment';
@@ -19,13 +19,30 @@ export class PlacesService {
   }
 
   loadUserPlaces() {
-    return this.fetchPlaces('/user-places', 'Could not fetch user places');
+    return this.fetchPlaces('/user-places', 'Could not fetch user places').pipe(
+      tap({
+        next: (userPlaces) => this.userPlaces.set(userPlaces),
+      })
+    );
   }
 
-  addPlaceToUserPlaces(placeId: string) {
-    return this.httpClient.put(`${environment.apiUrl}/user-places`, {
-      placeId,
-    });
+  addPlaceToUserPlaces(place: Place) {
+    const prevPlaces = this.userPlaces();
+    if (prevPlaces.some((p) => p.id !== place.id)) {
+      this.userPlaces.set([...prevPlaces, place]);
+    }
+    return this.httpClient
+      .put(`${environment.apiUrl}/user-places`, {
+        placeId: place.id,
+      })
+      .pipe(
+        catchError(() => {
+          this.userPlaces.set(prevPlaces);
+          return throwError(
+            () => new Error('Could not add place to user places')
+          );
+        })
+      );
   }
 
   removeUserPlace(place: Place) {}
