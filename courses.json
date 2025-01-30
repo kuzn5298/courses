@@ -153,7 +153,23 @@
           "Handling \"Loading\" & \"Error\" and etc."
         ],
         "tags": ["Angular", "TypeScript", "RxJS"]
-      }
+      },
+        {
+        "name": "Forms Deep Dive",
+        "url": "https://courses.kuzn.dev/forms-deep-dive/",
+        "description": "A simple application for a deeper dive into forms.",
+        "preview": "https://raw.githubusercontent.com/kuzn5298/courses/refs/heads/forms-deep-dive/preview.png",
+        "branch": {
+          "name": "forms-deep-dive",
+          "url": "https://github.com/kuzn5298/courses/tree/forms-deep-dive"
+        },
+        "skills": [
+          "Template-driven Forms",
+          "Reactive Forms",
+          "Manaaging Inputs & Validation and etc."
+        ],
+        "tags": ["Angular", "TypeScript", "CSS"]
+      },
     ]
   }
 ]
