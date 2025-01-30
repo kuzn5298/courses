@@ -3,4 +3,34 @@
   <h1>Angular Forms</h1>
 </header>
 
+<div class="forms-toggle">
+  <button
+    class="button"
+    (click)="selectForm('login-ng-form')"
+    [class.active]="formType() === 'login-ng-form'"
+  >
+    Login NgForm
+  </button>
+  <button
+    class="button"
+    (click)="selectForm('login-reactive-form')"
+    [class.active]="formType() === 'login-reactive-form'"
+  >
+    Login Reactive Form
+  </button>
+  <button
+    class="button"
+    (click)="selectForm('signup')"
+    [class.active]="formType() === 'signup'"
+  >
+    SignUp Form
+  </button>
+</div>
+
+@if(formType() === "login-ng-form") {
 <app-login />
+} @else if(formType() === "login-reactive-form") {
+<app-login-reactive />
+} @else {
+<app-signup />
+}
