@@ -4,12 +4,14 @@ import { catchError, map, tap, throwError } from 'rxjs';
 
 import { Place } from './place.model';
 import { environment } from '../../environments/environment';
+import { ErrorService } from '../shared/error.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class PlacesService {
   private httpClient = inject(HttpClient);
+  private errorService = inject(ErrorService);
   private userPlaces = signal<Place[]>([]);
 
   loadedUserPlaces = this.userPlaces.asReadonly();
@@ -28,7 +30,7 @@ export class PlacesService {
 
   addPlaceToUserPlaces(place: Place) {
     const prevPlaces = this.userPlaces();
-    if (prevPlaces.some((p) => p.id !== place.id)) {
+    if (!prevPlaces.some((p) => p.id === place.id)) {
       this.userPlaces.set([...prevPlaces, place]);
     }
     return this.httpClient
@@ -38,6 +40,7 @@ export class PlacesService {
       .pipe(
         catchError(() => {
           this.userPlaces.set(prevPlaces);
+          this.errorService.showError('Could not add place to user places');
           return throwError(
             () => new Error('Could not add place to user places')
           );
