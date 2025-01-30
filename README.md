@@ -36,3 +36,7 @@ This repository showcases projects completed during various courses. Each projec
 > **Name:** RxJS Deep Dive<br>
 > **Branch:** [rxjs-deep-dive](https://github.com/kuzn5298/courses/tree/rxjs-deep-dive)<br>
 > **Live Preview:** [View Project](https://courses.kuzn.dev/rxjs-deep-dive/)<br>
+
+> **Name:** Place Picker<br>
+> **Branch:** [place-picker](https://github.com/kuzn5298/courses/tree/place-picker)<br>
+> **Live Preview:** [View Project](https://courses.kuzn.dev/place-picker/)<br>
