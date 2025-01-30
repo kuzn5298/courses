@@ -4,7 +4,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { LoginReactiveComponent } from './auth/login-reactive/login-reactive.component';
 import { SignupComponent } from './auth/signup/signup.component';
 
-type FormType = 'login-ng-form' | 'login-reactive-form' | 'signup';
+type FormType = 'login-ng-form' | 'login-reactive-form' | 'signup-form';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -12,7 +12,7 @@ type FormType = 'login-ng-form' | 'login-reactive-form' | 'signup';
   imports: [LoginComponent, LoginReactiveComponent, SignupComponent],
 })
 export class AppComponent {
-  formType = signal<FormType>('login-reactive-form');
+  formType = signal<FormType>('signup-form');
 
   selectForm(type: FormType) {
     this.formType.set(type);
