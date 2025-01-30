@@ -40,3 +40,7 @@ This repository showcases projects completed during various courses. Each projec
 > **Name:** Place Picker<br>
 > **Branch:** [place-picker](https://github.com/kuzn5298/courses/tree/place-picker)<br>
 > **Live Preview:** [View Project](https://courses.kuzn.dev/place-picker/)<br>
+
+> **Name:** Forms Deep Dive<br>
+> **Branch:** [forms-deep-dive](https://github.com/kuzn5298/courses/tree/forms-deep-dive)<br>
+> **Live Preview:** [View Project](https://courses.kuzn.dev/forms-deep-dive/)<br>
