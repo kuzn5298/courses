@@ -4,14 +4,36 @@
   <div class="control-row">
     <div class="control no-margin">
       <label for="email">Email</label>
-      <input id="email" type="email" name="email" ngModel />
+      <input
+        id="email"
+        type="email"
+        name="email"
+        ngModel
+        email
+        required
+        #email="ngModel"
+      />
     </div>
 
     <div class="control no-margin">
       <label for="password">Password</label>
-      <input id="password" type="password" name="password" ngModel />
+      <input
+        id="password"
+        type="password"
+        name="password"
+        ngModel
+        required
+        minlength="6"
+        #password="ngModel"
+      />
     </div>
 
     <button class="button">Login</button>
   </div>
+
+  @if(form.submitted && form.invalid) { @if(email.invalid) {
+  <p class="control-error">Please enter a valid email address.</p>
+  } @if (password.invalid) {
+  <p class="control-error">Password must be at least 6 characters long.</p>
+  } }
 </form>
